@@ -1,0 +1,38 @@
+    apply plugin: 'com.jfrog.bintray'
+
+    bintray {
+        user = project.hasProperty('cubaCliBintrayUser') ? project.property('cubaCliBintrayUser') : System.getenv('BINTRAY_USER')
+        key = project.hasProperty('cubaCliBintrayApiKey') ? project.property('cubaCliBintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+
+        configurations = ['archives']
+
+        // make files public ?
+        publish = true
+        // override existing artifacts?
+        override = false
+
+        // metadata
+        pkg {
+            repo = '${bintray.repositoryName}'           // your repository name
+            name = '${bintray.packageName}'  // package name - it will be created upon upload
+
+#if( ${bintray.organization} )
+            // organization name, if your repository is created inside an organization.
+            // remove this parameter if you don't have an organization
+            userOrg = '${bintray.organization}'
+#end
+#if( ${bintray.websiteUrl} )
+            websiteUrl = '${bintray.websiteUrl}'
+#end
+#if( ${bintray.issueTrackerUrl} )
+            issueTrackerUrl = '${bintray.issueTrackerUrl}'
+#end
+            vcsUrl = '${bintray.vcsUrl}' // Mandatory for Open Source projects
+#if( ${bintray.licenses} )
+            licenses = ${bintray.licenses}
+#end
+#if( ${bintray.labels} )
+            labels = ${bintray.labels}
+#end
+        }
+    }
