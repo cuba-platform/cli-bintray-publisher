@@ -3,7 +3,7 @@
 <a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat" alt="license" title=""></a>
 [ ![Download](https://api.bintray.com/packages/cuba-platform/main/cli-bintray-publisher/images/download.svg) ](https://bintray.com/cuba-platform/main/cli-bintray-publisher/_latestVersion)
 
-Adds `bintray` command to [CUBA CLI](https://github.com/cuba-platform/cuba-cli), that helps user configure his CUBA Platform add-on project for publishing in Bintray.
+Adds `bintray` command to [CUBA CLI](https://github.com/cuba-platform/cuba-cli), that helps developers configure a CUBA Platform add-on project for publishing in Bintray.
 
 Read about uploading add-on to Bintray [here](https://www.cuba-platform.com/discuss/t/recommendations-on-developing-add-ons/4715).
 
