@@ -19,4 +19,4 @@ Loaded com.haulmont.cli.bintraypublisher.BintrayPublisherPlugin
 ```
 
 ## Issues
-Please use https://www.cuba-platform.com/discuss for discussion, support, and reporting problems coressponding to this sample.
+Please use https://www.cuba-platform.com/discuss for discussion, support, and reporting problems.
