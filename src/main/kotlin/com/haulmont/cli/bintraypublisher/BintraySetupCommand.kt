@@ -168,7 +168,6 @@ class BintraySetupCommand : GeneratorCommand<BintrayModel>() {
         }
 
         if (buildGradleModified) {
-
             projectStructure.buildGradle.let { Files.newOutputStream(it) }.use {
                 it.bufferedWriter().apply {
                     write(buildGradleText)
