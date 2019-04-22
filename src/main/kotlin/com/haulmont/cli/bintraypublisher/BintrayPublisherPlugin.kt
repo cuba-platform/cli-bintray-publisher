@@ -7,7 +7,7 @@ import com.haulmont.cuba.cli.ResourcesPath
 import com.haulmont.cuba.cli.event.InitPluginEvent
 
 class BintrayPublisherPlugin : CliPlugin {
-    override val apiVersion = 4
+    override val apiVersion = 5
 
     override val resources: ResourcesPath = HasResources("/com/haulmont/cli/bintraypublisher/")
 
